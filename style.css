@@ -100,7 +100,7 @@ p {
 @media (min-width: 768px) and (max-width: 991px) {
 
 
-div.smoothies {width: 90%;
+div.smoothies {width: 95%;
 	height: 45px;
 
 }
@@ -133,9 +133,10 @@ p {
 
 .fallafel {float: left;}
 
-.smoothies {clear: left;}
+.smoothies {clear: left;
+			float: center;}
 
-.burger {float: left;}
+.burger {float : right;}
 
 }
 
