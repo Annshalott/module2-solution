@@ -24,7 +24,7 @@ div {background-color: grey;
 
 }
 
-h2 {font-color: white;
+h2 {color: white;
     font-size:0.8em;
     text-align: center;
     border: 2px solid black;
@@ -32,7 +32,7 @@ h2 {font-color: white;
 
 }
 
-p {font-color: black;
+p {color: black;
 	font-size: 0.7em;
 	padding-top: 9px;
 	
@@ -41,26 +41,22 @@ p {font-color: black;
 
 #fallafel {
 			background-color: #ce8092;
-			font-color: black;
+			color: black;
 }
 
 #burger {
 		background-color: #cc264d;
-		font-color: white;
+		color: white;
 }
 
 #smoothies {
 		background-color: #f4c242;
-		font-color: black;
+		color: black;
 }
 
 
 
-.fallafel {float: left;}
 
-.smoothies {float: left}
-
-.burger {float: left;}
 
 
 
@@ -91,19 +87,30 @@ p {
 
 }
 
+.fallafel {float: left;}
+
+.smoothies {float: left}
+
+.burger {float: left;}
+
 }
 
 
 /****** Medium device only ******/
 @media (min-width: 768px) and (max-width: 991px) {
 
-div.burger {width: 90%;}
+
+div.smoothies {width: 90%;
+	height: 45px;
+
+}
+
 
 div { 
 	padding: 5px;
-    margin: 15px;
+	margin: 10px;
     overflow: hidden;
-    width: 40%;
+    width: 45%;
     float: left;
     position: relative;
     
@@ -123,6 +130,12 @@ p {
 	padding-left: 3px;
 
 }
+
+.fallafel {float: left;}
+
+.smoothies {clear: left;}
+
+.burger {float: left;}
 
 }
 
@@ -150,9 +163,15 @@ h2 {padding: 2px;
 
 p {
 	padding-right: 3px;
-	padding-bottom:3px;
-	padding-left: 2px;
+	padding-bottom:1px;
+	padding-left: 3px;
 
 }
+
+.fallafel {float: left;}
+
+.smoothies {clear: left}
+
+.burger {clear: left;}
 
 }
