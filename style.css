@@ -1,0 +1,178 @@
+style.css
+
+* {box-sizing: border-box;
+
+}
+
+body {
+    background-color: white;
+    font-family: comic, arial, verdana;
+    
+}
+
+/****** Base styles ******/
+
+h1 {
+    text-align: center;
+    font-size: 1.5em;
+
+}
+
+div {background-color: grey;
+	border: 2px solid black;
+	overflow: hidden;
+
+}
+
+h2 {color: white;
+    font-size:0.8em;
+    text-align: center;
+    border: 2px solid black;
+    width: 80px;
+
+}
+
+p {color: black;
+	font-size: 0.7em;
+	padding-top: 9px;
+	
+
+}
+
+#fallafel {
+			background-color: #ce8092;
+			color: black;
+}
+
+#burger {
+		background-color: #cc264d;
+		color: white;
+}
+
+#smoothies {
+		background-color: #f4c242;
+		color: black;
+}
+
+
+
+
+
+
+
+/****** Large device only ******/
+@media (min-width: 992px) {
+
+div { 
+	padding: 5px;
+    margin: 18px;
+    overflow: hidden;
+    width: 28%;
+    float: left;
+    position: relative;
+    
+}
+
+h2 {padding: 2px;
+	margin:-10px;
+    float:right;
+    float: top;
+
+}
+
+p {
+	padding-right: 3px;
+	padding-bottom:3px;
+	padding-left: 3px;
+
+}
+
+.fallafel {float: left;}
+
+.smoothies {float: left}
+
+.burger {float: left;}
+
+}
+
+
+/****** Medium device only ******/
+@media (min-width: 768px) and (max-width: 991px) {
+
+
+div.smoothies {width: 95%;
+	height: 45px;
+
+}
+
+
+div { 
+	padding: 5px;
+	margin: 10px;
+    overflow: hidden;
+    width: 45%;
+    float: left;
+    position: relative;
+    
+}
+
+
+h2 {padding: 2px;
+	margin:-10px;
+    float:right;
+    float: top;
+
+}
+
+p {
+	padding-right: 3px;
+	padding-bottom:3px;
+	padding-left: 3px;
+
+}
+
+.fallafel {float: left;}
+
+.smoothies {clear: left;
+			float: center;}
+
+.burger {float : right;}
+
+}
+
+
+
+/****** Small device only ******/
+@media (max-width: 767px) {
+
+div { 
+	padding: 5px;
+    margin: 15px;
+    overflow: hidden;
+    width: 90%;
+    float: left;
+    position: relative;
+    
+}
+
+h2 {padding: 2px;
+	margin:-10px;
+    float:right;
+    float: top;
+
+}
+
+p {
+	padding-right: 3px;
+	padding-bottom:1px;
+	padding-left: 3px;
+
+}
+
+.fallafel {float: left;}
+
+.smoothies {clear: left}
+
+.burger {clear: left;}
+
+}
