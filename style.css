@@ -1,6 +1,8 @@
 style.css
 
 * {box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 
 }
 
@@ -14,30 +16,45 @@ body {
 
 h1 {
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.5em
+    margin-bottom: 15px;
+    
 
 }
 
-div {background-color: grey;
-	border: 2px solid black;
-	overflow: hidden;
-
+div {
+    overflow: hidden;
 }
 
-h2 {color: white;
-    font-size:0.8em;
-    text-align: center;
-    border: 2px solid black;
-    width: 80px;
-
+#container {position:relative;
 }
 
 p {color: black;
+	background-color: grey;
 	font-size: 0.7em;
-	padding-top: 9px;
-	
-
+	padding-top: 22px;
+	padding-right: 5px;
+	padding-bottom:5px;
+	padding-left: 5px;
+	border: 2px solid black;
+	margin-right: auto;
+  margin-left: auto;
+  height: auto;
+  width: 90%;
+ 
 }
+
+h2 {
+	 color: white;
+    font-size:0.8em;
+    text-align: center;
+    border: 2px solid black;
+    width: 70px;
+    position:absolute; 
+    top:0; right:0;
+}
+
+
 
 #fallafel {
 			background-color: #ce8092;
@@ -54,125 +71,48 @@ p {color: black;
 		color: black;
 }
 
+/****** Simple Responsive Framework *******/
 
+.row {
+	width: 100%;
 
-
-
+}
 
 
 /****** Large device only ******/
 @media (min-width: 992px) {
 
-div { 
-	padding: 5px;
-    margin: 18px;
-    overflow: hidden;
-    width: 28%;
+.col-lg-4 {
     float: left;
-    position: relative;
-    
+    width: 33.33%;
+  }
+
+  
 }
-
-h2 {padding: 2px;
-	margin:-10px;
-    float:right;
-    float: top;
-
-}
-
-p {
-	padding-right: 3px;
-	padding-bottom:3px;
-	padding-left: 3px;
-
-}
-
-.fallafel {float: left;}
-
-.smoothies {float: left}
-
-.burger {float: left;}
-
-}
-
 
 /****** Medium device only ******/
 @media (min-width: 768px) and (max-width: 991px) {
-
-
-div.smoothies {width: 95%;
-	height: 45px;
-
-}
-
-
-div { 
-	padding: 5px;
-	margin: 10px;
-    overflow: hidden;
-    width: 45%;
+	
+.col-md-6, .col-md-12 {
     float: left;
-    position: relative;
-    
-}
+  }
+  .col-md-6 {
+    width: 50%;
+  }
 
-
-h2 {padding: 2px;
-	margin:-10px;
-    float:right;
-    float: top;
-
-}
-
-p {
-	padding-right: 3px;
-	padding-bottom:3px;
-	padding-left: 3px;
+  .col-md-12 {
+    width: 100%;
+  }
 
 }
-
-.fallafel {float: left;}
-
-.smoothies {clear: left;
-			float: center;}
-
-.burger {float : right;}
-
-}
-
 
 
 /****** Small device only ******/
-@media (max-width: 767px) {
+@media (max-width: 767px)  {
 
-div { 
-	padding: 5px;
-    margin: 15px;
-    overflow: hidden;
-    width: 90%;
+  .col-sm-12 {
+    width: 100%;
     float: left;
-    position: relative;
-    
-}
-
-h2 {padding: 2px;
-	margin:-10px;
-    float:right;
-    float: top;
-
-}
-
-p {
-	padding-right: 3px;
-	padding-bottom:1px;
-	padding-left: 3px;
-
-}
-
-.fallafel {float: left;}
-
-.smoothies {clear: left}
-
-.burger {clear: left;}
+  }
 
 }
